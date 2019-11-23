@@ -4,8 +4,8 @@
 
 <p>API REST com Docker utilizando o container do mongodb ,usando mongoose para modelar o mongodb
 e utilizando o Robo3t para visualizar os dados registrado no banco de dados não relacional.
-Usando insomnia para testa a API.
-Utilizando CRUD que são as quatro operações básicas (criação, consulta, atualização e destruição de dados).</
+<br>Usando insomnia para testa a API.
+<br>Utilizando CRUD que são as quatro operações básicas (criação, consulta, atualização e destruição de dados).</p>
 
 ## Startando a API
 
