@@ -1,6 +1,9 @@
-const mongoose = require('mongoose');
-
-const productSchema = new mongoose.Schema({
+// IMPORTANDO O MONGOOSE 
+const mongoose = require("mongoose");
+// IMPORTANDO O MONGOOSEPAGINATE
+const mongoosePaginate = require("mongoose-paginate");
+//CRIANDO TABELA NO BANCO DE DADOS
+const ProductSchema = new mongoose.Schema({
   title:{
     type: String,
     required: true,
@@ -11,12 +14,14 @@ const productSchema = new mongoose.Schema({
   },
   url: {
     type: String,
-    required: true
+    required: true,
   },
-  createAt: {
+  createdAt: {
     type: Date,
     default: Date.now,
   },
 });
 
-mongoose.model("Product", productSchema);
+ProductSchema.plugin(mongoosePaginate);
+
+mongoose.model("Product", ProductSchema);
